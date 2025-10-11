@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 	description:
 		'Welcome to my portfolio! I am Eric Lee, an aspiring Software Engineer / Data Scientist. I focus on creating straightforward solutions that solve real problems.',
 	keywords: [
-'Python', 'C', 'C++', 'JavaScript', 'Next.js', 'TypeScript', 'TailwindCSS', 'React', 'Java', 'Node.js', 'SQL', 'MongoDB', 'AWS', 'Springboot', 'Firebase'
+		'Python', 'C', 'C++', 'JavaScript', 'Next.js', 'TypeScript', 'TailwindCSS', 'React', 'Java', 'Node.js', 'SQL', 'MongoDB', 'AWS', 'Springboot', 'Firebase'
 	],
 	authors: [{ name: "Eric's Portfolio" }],
 	creator: "Eric's Portfolio",
@@ -25,10 +25,10 @@ export const metadata: Metadata = {
 		title: "Eric's Portfolio",
 		description: 'Welcome to my portfolio! I’m Eric, a developer passionate about building simple, effective solutions that make a real impact.',
 		url: 'https://ericportfolio-eight.vercel.app/',
-		siteName: '',
+		siteName: 'Eric Lee Portfolio',
 		images: [
 			{
-				url: '/og-image.jpg',
+				url: 'https://ericportfolio-eight.vercel.app/punpun.jpeg',  
 				width: 1200,
 				height: 630,
 				alt: "Eric's Portfolio",
@@ -36,6 +36,12 @@ export const metadata: Metadata = {
 		],
 		locale: 'en_US',
 		type: 'website',
+	},
+	twitter: {
+		card: 'summary_large_image',
+		title: "Eric's Portfolio",
+		description: 'Welcome to my portfolio! I’m Eric, a developer passionate about building simple, effective solutions that make a real impact.',
+		images: ['https://ericportfolio-eight.vercel.app/punpun.jpeg'],
 	},
 	robots: {
 		index: true,
@@ -57,7 +63,9 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>{children}</body>
+			<body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+				{children}
+			</body>
 		</html>
 	);
 }
