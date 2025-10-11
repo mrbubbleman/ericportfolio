@@ -37,13 +37,6 @@ export const metadata: Metadata = {
 		locale: 'en_US',
 		type: 'website',
 	},
-	twitter: {
-		card: 'summary_large_image',
-		title: "Eric's Portfolio",
-		description: 'Welcome to my portfolio! I’m Eric, a developer passionate about building simple, effective solutions that make a real impact.',
-		creator: '@yourusername',
-		images: ['/og-image.jpg'],
-	},
 	robots: {
 		index: true,
 		follow: true,
